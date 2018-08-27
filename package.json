@@ -2,7 +2,8 @@
   "name": "@fireflysemantics/collections",
   "version": "1.0.0",
   "description": "Typescript Collection Utilities",
-  "main": "index.ts",
+  "main": "target/index.js",
+  "typings": "target/index.d.ts",
   "scripts": {
       "unit-test": "mocha -r ts-node/register src/**/*.spec.ts",
       "test": "nyc mocha",
