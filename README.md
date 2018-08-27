@@ -1,12 +1,13 @@
-# Fireflysemantics Collections
+[![Build Status](https://travis-ci.org/fireflysemantics/collections.svg?branch=master)](https://travis-ci.org/fireflysemantics/collections)
 
-Collection utilities written in Typescript
+# @fireflysemantics/collections
 
-### Installation
+Typescript collections library.
 
-Via [npm](https://www.npmjs.com/package/@fireflysemantics/collections).
+## Usage
 
-```
-npm i -S @fireflysemantics/collections
+See the [test cases](https://github.com/fireflysemantics/collections/blob/master/src/index.spec.ts).
 
-```
+## API Documentation
+
+See [Typedoc API Documentation](https://fireflysemantics.github.io/collections/doc/modules/_index_.html)

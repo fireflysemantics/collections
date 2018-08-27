@@ -1,6 +1,6 @@
 {
   "name": "@fireflysemantics/collections",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript Collection Utilities",
   "main": "target/index.js",
   "typings": "target/index.d.ts",
