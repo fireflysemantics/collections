@@ -10,7 +10,8 @@ import {
   sortStringsDescending,
   sortStringsAscending,
   reverse,
-  deepClone
+  deepClone,
+  toArrayByObjectKey
 } from "./index";
 
 describe("Push", () => {
@@ -123,4 +124,41 @@ describe("Deep Clone", () => {
     expect(original[0]===result[0]).toBeFalsy();
     expect(original[1]===result[1]).toBeFalsy();
   });
+});
+
+describe("toArrayByObjectKey", () => {
+  interface Student {
+    id: string;
+    name: string;
+    sex: 'X' | 'Y' | 'Z';
+    standard: number;
+    propName: number;
+    anotherSillyPropName: number;
+  }
+
+  interface Students {
+    id: string[];
+    name: string[];
+    sex: string[];
+    standard: number[];
+    propName: number[];
+    anotherSillyPropName: number[];
+  }
+
+  let students:Student[] = [
+    { id:`1`, name:'1', sex:'X', standard: 1, propName: 11, anotherSillyPropName:111,},
+    { id:`2`, name:'2', sex:'Y', standard: 2, propName: 22, anotherSillyPropName:222,},
+    { id:`3`, name:'3', sex:'Z', standard: 3, propName: 33, anotherSillyPropName:333,},
+  ]
+  it("should map the students to an single instances containing all the property values", () => {
+    let s:Students = toArrayByObjectKey<Student>(students);
+
+    expect(s.id.length).toEqual(3);
+    expect(s.name.length).toEqual(3);
+    expect(s.sex.length).toEqual(3);
+    expect(s.standard.length).toEqual(3);
+    expect(s.propName.length).toEqual(3);
+    expect(s.anotherSillyPropName.length).toEqual(3);
+
+   });
 });
