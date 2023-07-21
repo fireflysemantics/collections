@@ -17,7 +17,7 @@ export function modulusAction<E>(
     const match: boolean = index % divisor === 0;
     if (onMatch && match) {
       f(item);
-    } else {
+    } else if (!match) {
       f(item);
     }
   });
