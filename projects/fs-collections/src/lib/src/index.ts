@@ -13,3 +13,4 @@ export * from './deep-clone.function';
 export * from './to-array-by-object-key.function';
 export * from './models/bucket-value.interface';
 export * from './to-bucket.function';
+export * from './modulus-action.function';
