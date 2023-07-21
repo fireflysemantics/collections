@@ -10,4 +10,4 @@ See the [test cases](https://github.com/fireflysemantics/collections/blob/master
 
 ## API Documentation
 
-See [Typedoc API Documentation](https://fireflysemantics.github.io/collections/doc/modules/_index_.html)
+See [Typedoc API Documentation](https://fireflysemantics.github.io/collections/)
