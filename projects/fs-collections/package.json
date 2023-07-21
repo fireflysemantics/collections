@@ -1,10 +1,25 @@
 {
   "name": "@fireflysemantics/collections",
-  "version": "1.0.0",
-  "peerDependencies": {
-  },
+  "version": "1.0.5",
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fireflysemantics/collections/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireflysemantics/collections.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Typescript",
+    "Arrays",
+  ],
+  "peerDependencies": {
+    "tslib": "*"
   },
   "sideEffects": false
 }
