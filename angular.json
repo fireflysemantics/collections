@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "fs-collections": {
+      "projectType": "library",
+      "root": "projects/fs-collections",
+      "sourceRoot": "projects/fs-collections/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fs-collections/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fs-collections/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fs-collections/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/fs-collections/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "collections-workspace",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test --watch=false --browsers=ChromeHeadless",
+    "bootstrap": "npm run i && npm run ig && npm i && cd projects/fs-collections && npm-install-peers && npm i",
+    "ig": "npm install -g @jsdevtools/version-bump-prompt && npm install -g npm-check-updates && npm install -g npm-install-peers",
+    "i": "typedoc",
+    "c": "ng build fs-collections",
+    "u": "cd projects/fs-collections && ncu -u && npm i && npm-install-peers",
+    "bp": "cd projects/fs-collections && bump patch",
+    "p": "npm run cp && npm run bp && npm run c && cd dist/fs-collections/ && npm publish",
+    "cp": "cp ./README.md projects/fs-collections/",
+    "d": "typedoc --out doc --exclude **/*.spec.ts ./projects/slice/src/lib"      
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.0.0",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.0.6",
+    "@angular/cli": "~16.0.4",
+    "@angular/compiler-cli": "^16.0.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^16.0.0",
+    "typescript": "~5.0.2"
+  }
+}
