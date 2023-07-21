@@ -16,7 +16,7 @@
   "keywords": [
     "Javascript",
     "Typescript",
-    "Arrays",
+    "Arrays"
   ],
   "peerDependencies": {
     "tslib": "*"
