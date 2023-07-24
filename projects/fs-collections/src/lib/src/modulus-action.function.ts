@@ -12,7 +12,7 @@ export function modulusAction<E>(
   data: E[],
   divisor: number,
   onMatch: boolean = true,
-  f: (data: E) => E,
+  f: (data: E) => void,
   remainder: number = 0
 ): E[] {
   data.forEach((item: E, index: number) => {
