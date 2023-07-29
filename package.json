@@ -9,7 +9,7 @@
     "test": "ng test --watch=false --browsers=ChromeHeadless",
     "bootstrap": "npm run i && npm run ig && npm i && cd projects/fs-collections && npm-install-peers && npm i",
     "ig": "npm i -g @jsdevtools/version-bump-prompt && npm i -g npm-check-updates && npm i -g npm-install-peers && npm i -g http-server",
-    "i": "typedoc",
+    "i": "npm i -D typedoc",
     "c": "ng build fs-collections",
     "u": "cd projects/fs-collections && ncu -u && npm i && npm-install-peers",
     "bp": "cd projects/fs-collections && bump patch",

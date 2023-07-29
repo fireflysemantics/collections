@@ -1,6 +1,6 @@
 {
   "name": "@fireflysemantics/collections",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "dependencies": {
     "tslib": "^2.3.0"
   },
